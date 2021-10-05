@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    margin-top: 160px;
+    justify-content: center;
+    align-items: center;
+    background: #0ebc7d;
+    
+    
+}
+.container{
+    position: relative;
+    width: 250px;
+    height: 320px;
+   
+}
+#number{
+    font-size: 150px;
+    position: absolute;
+    top: 75px;
+    left: 80px;
+    
+
+}
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background: rgb(108, 175, 6);
+    border-radius: 20px;
+    
+}
+.front{
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(0, 195, 255) url("./diamonds-884172.svg") no-repeat fixed center;
+    color: rgb(0, 0, 0);
+
+}
+.back{
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: yellow;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+}
+
+#diam1{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  
+   
+}
+#diam2{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+   
+   
+}
+#diam3{
+    position: absolute;
+   bottom: 10px;
+   left: 10px;
+   
+  
+}
+#diam4{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+   
+   
+}
+.diam{
+    background-color: #0ebc7d;
+    transform: rotate(45deg);
+    width: 23px;
+    height: 23px;
+}
+.diam:hover{
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s ease ;
+    transform: rotate(130deg);
+}
